@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "PLOON",
+    "slug": "PLOON",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "PLOON"
+}
