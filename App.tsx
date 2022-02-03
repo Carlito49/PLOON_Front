@@ -6,7 +6,7 @@ import Accueil from './components/Accueil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Accueil bonjour="Salut c'est moi!!"/>
+        <Accueil bonjour="Salut c'est moi!!"/>
     </View>
   );
 }
