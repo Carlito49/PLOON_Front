@@ -1,11 +1,17 @@
 import React from "react";
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
+import Footer from "./Footer";
 
-export default function Accueil(props)
-{   
-    return(
+interface Props{
+    bonjour: string;
+}
+
+const Accueil = (props: Props) => {
+    return (
         <View>
-            
+            <Footer />
         </View>
     );
 }
+
+export default Accueil;
