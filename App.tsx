@@ -1,12 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Accueil from './src/components/Accueil';
+import { StyleSheet, View } from 'react-native';
+import Accueil from './src/components/organisms/Accueil';
 
 export default function App() {
   return (
     <View style={styles.container}>
-        <Accueil bonjour="Salut c'est moi!!"/>
+        <Accueil />
     </View>
   );
 }

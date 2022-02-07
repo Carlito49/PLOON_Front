@@ -1,9 +1,10 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../molecules/Footer";
 import { View } from 'react-native'
 
-interface Props{
-    bonjour: string;
+interface Props
+{
+    
 }
 
 const Accueil = (props: Props) => {
