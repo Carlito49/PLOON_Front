@@ -3,7 +3,7 @@ import HomeButton from '../atoms/HomeButton'
 import { View, Text } from "react-native";
 import FooterStyle from '../../style/Footer.style'
 
-const Footer = () => {
+const Footer: React.FunctionComponent = () => {
 
     return(
         <View style={FooterStyle.container}>

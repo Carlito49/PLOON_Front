@@ -9,7 +9,7 @@ interface Props
     
 }
 
-const Accueil = (props: Props) => {
+const Accueil: React.FunctionComponent<Props> = () => {
     return (
         <View style={AccueilStyle.container}>
             <View>
