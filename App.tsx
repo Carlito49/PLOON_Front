@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Accueil from './src/pages/Accueil';
+import { RootNavigator } from './src/navigation/RootNavigator'
 
 export default function App() {
   
   return (
     <View style={styles.container}>
       <View>
-        <Accueil />
+        <RootNavigator />
       </View>
     </View>
   );
