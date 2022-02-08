@@ -2,9 +2,9 @@ import React from "react";
 import HomeButton from '../atoms/HomeButton'
 import { View, Text } from "react-native";
 import FooterStyle from '../../style/Footer.style'
-import { NavigationContainer } from '@react-navigation/native'
 
 const Footer = () => {
+
     return(
         <View style={FooterStyle.container}>
             <View style={FooterStyle.bGgreen}>
