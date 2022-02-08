@@ -3,10 +3,17 @@ import { StyleSheet } from "react-native";
 
 const FooterStyle = StyleSheet.create({
     container: {
-        flex : 1,
-        justifyContent: 'flex-start',
-        width: '15%',
-        height: "1px"
+        flex: 1,
+        flexDirection: 'column'
+    },
+    bGorange: {
+        backgroundColor: 'orange'
+    },
+    bGblue: {
+        backgroundColor: 'blue'
+    },
+    bGgreen: {
+        backgroundColor: 'green'
     }
 });
 

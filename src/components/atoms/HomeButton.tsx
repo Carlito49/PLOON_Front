@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Image, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import HomeButtonStyle from '../../style/HomeButton.style'
 
 const HomeButton = () => {
     return (
-    <View style={HomeButtonStyle.btn}>
-        <TouchableOpacity>
-            <Image source={require('../../../assets/images/home.png')}/>
+    <View>
+        <TouchableOpacity >
+            <Text>CA VA</Text>
         </TouchableOpacity>
     </View>
     );
