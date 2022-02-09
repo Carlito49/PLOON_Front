@@ -1,10 +1,11 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, Image } from 'react-native'
+import HeaderStyle from '../../style/Header.style';
 
 const Header: React.FunctionComponent = () => {
     return(
         <View>
-            
+            <Image source={require('../../../assets/images/ploonLogo.png')} style={HeaderStyle.image}/>
         </View>
     );
 }
