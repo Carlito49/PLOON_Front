@@ -1,22 +1,31 @@
 import React from "react";
 import HomeButton from '../atoms/HomeButton'
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import FooterStyle from '../../style/Footer.style'
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Footer: React.FunctionComponent = () => {
 
+    const onTouchable = () => {
+        console.log('Bouton appuyer')
+    }
+
+    const onBtn = () => {
+        console.log('btn push!!!!!!!!')
+    }
+
     return(
         <View style={FooterStyle.container}>
-            <View style={FooterStyle.bGgreen}>
+            <TouchableOpacity style={[FooterStyle.btn, FooterStyle.bgYellow]}>
                 <HomeButton />
-            </View>
-            <View style={FooterStyle.bGorange}>
-                <Text>AZERTY</Text>
-            </View>
-            <View style={FooterStyle.bGblue}>
-                <Text>CACA</Text>
-            </View>
-        </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={onBtn} style={[FooterStyle.btn, FooterStyle.bgOrange]}>
+                <HomeButton />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={onTouchable} style={[FooterStyle.btn, FooterStyle.bgRed]}>
+                <HomeButton />
+            </TouchableOpacity>
+        </View>   
     );
 }
 

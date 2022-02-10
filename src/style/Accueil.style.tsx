@@ -3,11 +3,20 @@ import { StyleSheet } from 'react-native'
 
 const AccueilStyle = StyleSheet.create({
     container: {
+        flex: 1,
+        backgroundColor: 'white'
+    },
+    header: {
         flex: 1
     },
-    half1: {
-        flex: 1, 
-        backgroundColor: 'red'
+    body: {
+        flex: 2,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    footer: {
+        flex: 0.5,
+        alignItems: 'stretch'
     }
 });
 

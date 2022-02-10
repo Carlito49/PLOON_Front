@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View } from 'react-native'
 import HomeButtonStyle from '../../style/HomeButton.style'
+import { Entypo } from '@expo/vector-icons'
 
 const HomeButton: React.FunctionComponent = () => {
     return (
-    <View>
-        <TouchableOpacity >
-            <Text>CA VA</Text>
-        </TouchableOpacity>
-    </View>
+        <View>
+            <View>
+            <Entypo name='home' style={HomeButtonStyle.image} size={40} />
+            </View>
+        </View>
     );
 }
 
 export default HomeButton;
-

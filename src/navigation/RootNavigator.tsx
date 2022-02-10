@@ -14,7 +14,12 @@ export const RootNavigator: React.FunctionComponent = () => {
     return(
         <Stack.Navigator>
             <Stack.Group>
-                <Stack.Screen name="Accueil" component={Accueil}/>
+                <Stack.Screen 
+                name="Accueil" 
+                component={Accueil}
+                options={{
+                    headerTitleAlign: 'center'
+                }}/>
                 <Stack.Screen 
                 name="Profile" 
                 component={Profile}

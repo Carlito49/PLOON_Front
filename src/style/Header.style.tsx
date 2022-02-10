@@ -2,9 +2,13 @@ import React from "react";
 import { StyleSheet } from "react-native";
 
 const HeaderStyle = StyleSheet.create({
+    container: {
+        alignItems: 'center',
+        flex: 0.2
+    },
     image: {
-        width: 200,
-        height: 200,
+        flex: 1,
+        resizeMode: 'contain'
     }
 });
 

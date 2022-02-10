@@ -4,7 +4,7 @@ import HeaderStyle from '../../style/Header.style';
 
 const Header: React.FunctionComponent = () => {
     return(
-        <View>
+        <View style={HeaderStyle.container}>
             <Image source={require('../../../assets/images/ploonLogo.png')} style={HeaderStyle.image}/>
         </View>
     );

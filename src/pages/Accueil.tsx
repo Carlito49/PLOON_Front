@@ -21,15 +21,11 @@ const Accueil: React.FunctionComponent<AccueilProps> = () => {
 
     return (
         <View style={AccueilStyle.container}>
-            <View>
-                <Header />
-            </View>
-            <View>
+            <Header />
+            <View style={AccueilStyle.body}>
                 <Button title="Aller à la page Profile" onPress={onPressProfile}/>
             </View>
-            <View>
-                <Footer />
-            </View>
+            <Footer />
         </View>
     );
 }
