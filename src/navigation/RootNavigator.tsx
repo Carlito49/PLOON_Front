@@ -12,14 +12,16 @@ const Stack = createNativeStackNavigator<RouteParams>();
 
 export const RootNavigator: React.FunctionComponent = () => {
     return(
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Group>
                 <Stack.Screen 
                 name="Accueil" 
                 component={Accueil}
                 options={{
-                    headerTitleAlign: 'center'
-                }}/>
+                    headerTitleAlign: 'center',  
+                }} 
+                
+                />
                 <Stack.Screen 
                 name="Profile" 
                 component={Profile}

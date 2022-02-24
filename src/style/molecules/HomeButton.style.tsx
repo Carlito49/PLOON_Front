@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 
-const HomeButton = StyleSheet.create({
+const HomeButtonStyle = StyleSheet.create({
     image: {
         color: 'black',
     }
 });
 
-export default HomeButton;
+export default HomeButtonStyle;

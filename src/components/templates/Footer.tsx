@@ -1,7 +1,7 @@
 import React from "react";
 import HomeButton from '../molecules/HomeButton'
 import { View } from "react-native";
-import FooterStyle from '../../style/Footer.style'
+import FooterStyle from '../../style/templates/Footer.style'
 import { TouchableOpacity } from "react-native";
 
 const Footer: React.FunctionComponent = () => {

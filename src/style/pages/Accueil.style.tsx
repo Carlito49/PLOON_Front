@@ -17,6 +17,12 @@ const AccueilStyle = StyleSheet.create({
     footer: {
         flex: 0.5,
         alignItems: 'stretch'
+    },
+    input: {
+        marginVertical: 10
+    },
+    btn: {
+        backgroundColor: 'red'
     }
 });
 

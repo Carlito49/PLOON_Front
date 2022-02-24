@@ -19,7 +19,7 @@ const FooterStyle = StyleSheet.create({
     },
     btn: {
         backgroundColor: 'purple',
-        width: Dimensions.get('screen').width / 3,
+        width: '100%',
         alignItems: 'center',
         borderRadius: 15,
         borderWidth: 2,
