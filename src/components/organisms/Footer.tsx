@@ -1,8 +1,8 @@
 import React from "react";
-import HomeButton from '../atoms/HomeButton'
+import HomeButton from '../molecules/HomeButton'
 import { View } from "react-native";
 import FooterStyle from '../../style/Footer.style'
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native";
 
 const Footer: React.FunctionComponent = () => {
 
