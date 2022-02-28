@@ -7,7 +7,7 @@ import { TouchableOpacity } from "react-native";
 const Footer: React.FunctionComponent = () => {
 
     const onTouchable = () => {
-        console.log('Bouton appuyer')
+        
     }
 
     const onBtn = () => {
