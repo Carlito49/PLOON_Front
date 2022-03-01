@@ -4,25 +4,25 @@ import { StyleSheet } from 'react-native'
 const AccueilStyle = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white'
-    },
-    header: {
-        flex: 1
-    },
-    body: {
-        flex: 2,
         alignItems: 'center',
         justifyContent: 'center'
     },
-    footer: {
-        flex: 0.5,
-        alignItems: 'stretch'
+    title: {
+        flex: 0.5, 
+        justifyContent: 'flex-end'
     },
     input: {
-        marginVertical: 10
+        flex: 1,
+        justifyContent: 'center',
+        marginVertical: 5
+    },
+    inputMargin: {
+        marginVertical: 5
     },
     btn: {
-        backgroundColor: 'red'
+        flex: 0.5,
+        justifyContent: 'flex-start',
+        alignItems: 'flex-end'
     }
 });
 

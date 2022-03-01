@@ -4,7 +4,6 @@ import { StyleSheet } from "react-native";
 const HeaderStyle = StyleSheet.create({
     container: {
         alignItems: 'center',
-        backgroundColor: 'red',
         height: '100%'
     },
     image: {

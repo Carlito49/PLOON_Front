@@ -1,12 +1,12 @@
 import React from "react";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 
 const FooterStyle = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        flex: 0.2,
+        flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     bgOrange: {
         backgroundColor: 'orange'
@@ -18,12 +18,12 @@ const FooterStyle = StyleSheet.create({
         backgroundColor: 'red'
     },
     btn: {
-        backgroundColor: 'purple',
-        width: '100%',
+        flex: 1,
         alignItems: 'center',
         borderRadius: 15,
         borderWidth: 2,
-        borderColor: 'white'
+        borderColor: 'white',
+        marginHorizontal: 3
     }
 });
 

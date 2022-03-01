@@ -3,9 +3,13 @@ import { StyleSheet } from "react-native";
 
 const ValidationButtonStyle = StyleSheet.create({
     btn: {
-        borderColor: 'white',
-        borderRadius: 50,
-        alignItems: 'flex-end'
+        borderWidth: 5,
+        padding: 10,
+        borderRadius: 10,
+        height: 50,
+        width: 100,
+        alignItems: 'center',
+        backgroundColor: '#ADD8E6'
     }
 });
 
