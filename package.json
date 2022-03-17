@@ -26,7 +26,8 @@
     "react-native-web": "0.17.1",
     "tailwind": "^4.0.0",
     "tailwind-rn": "^4.2.0",
-    "typeorm-model-generator": "^0.4.6"
+    "typeorm-model-generator": "^0.4.6",
+    "react-native-appearance": "~0.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

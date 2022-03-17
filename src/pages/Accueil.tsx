@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -12,11 +12,18 @@ const Accueil: React.FunctionComponent = () => {
     const route = useRoute<RouteProp<RouteParams>>();
     const navigation = useNavigation();
 
-    const [text, setText] = useState<string>(null);
-    const [password, setPassword] = useState<string>(null);
+    const [text, setText] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
 
     const onPress = () => {
 
+        fetch('http://localhost:3000/user', {mode: 'no-cors'})
+        .then((response) => {
+            console.log(response);
+        })
+        .catch(() => {
+            console.log('Une erreur s\'est produite');
+        })
     }
 
     return (

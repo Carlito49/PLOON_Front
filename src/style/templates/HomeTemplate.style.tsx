@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 const HomeTemplateStyle = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 1
     },
     headerView: {
         flex: 1

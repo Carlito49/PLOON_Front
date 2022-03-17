@@ -7,6 +7,7 @@ import HomeTemplateStyle from "../../style/templates/HomeTemplate.style"
 type Props = {
     children: React.ReactNode
 }
+
 const HomeTemplate: React.FunctionComponent<Props> = (props: Props) => {
     return(
         <View style={HomeTemplateStyle.container}>
@@ -15,9 +16,6 @@ const HomeTemplate: React.FunctionComponent<Props> = (props: Props) => {
             </View>
             <View style={HomeTemplateStyle.bodyView}>
                 {props.children}
-            </View>
-            <View style={HomeTemplateStyle.footerView}>
-                <Footer />
             </View>
         </View>
     )

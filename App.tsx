@@ -1,18 +1,21 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, Dimensions, Platform } from 'react-native';
+import { StyleSheet, SafeAreaView, Dimensions } from 'react-native';
 import { RootNavigator } from './src/navigation/RootNavigator'
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
+import { AppearanceProvider } from "react-native-appearance";
 
 export default function App() {
 
   return (
-    <SafeAreaView style={styles.container}>
-      <NavigationContainer>
-        <RootNavigator />
-        <StatusBar style="auto"/>
-      </NavigationContainer>
-    </SafeAreaView>
+    <AppearanceProvider>
+      <SafeAreaView style={styles.container}>
+        <NavigationContainer>
+          <RootNavigator />
+          <StatusBar style="auto" />
+        </NavigationContainer>
+      </SafeAreaView>
+    </AppearanceProvider>
   );
 }
 
@@ -20,7 +23,8 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       height: Dimensions.get('screen').height,
-      width: Dimensions.get('screen').width
-  }
+      width: Dimensions.get('screen').width,
+      backgroundColor: 'black'
+  },
 });
 
