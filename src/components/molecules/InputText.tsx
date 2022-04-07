@@ -4,9 +4,9 @@ import InputTextStyle from "../../style/molecules/InputText.style"
 
 interface InputTextProps
 {
-    placeholder: string;
+    placeholder?: string;
     onChangeText: (text: string) => void;
-    value: string;
+    value?: string;
     secureTextEntry: boolean;
 }
 

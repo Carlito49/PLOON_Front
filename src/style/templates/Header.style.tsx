@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 const HeaderStyle = StyleSheet.create({
     container: {
         alignItems: 'center',
-        height: '100%'
+        height: '50%',
     },
     image: {
         flex: 1,

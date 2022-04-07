@@ -1,12 +1,12 @@
-import React from "react";
 import { StyleSheet, Dimensions } from "react-native";
+import Themes from "../Themes";
 
 const screenWidth = Dimensions.get("screen").width;
-const screenHeight = Dimensions.get('screen').height / 12;
+const screenHeight = Dimensions.get('screen').height / 16;
 
 const InputTextStyle = StyleSheet.create({
     input: {
-        borderWidth: 5,
+        borderBottomWidth: 1,
         width: screenWidth - 40,
         height: screenHeight,
         borderColor: 'black',
