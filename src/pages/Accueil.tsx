@@ -19,7 +19,7 @@ const Accueil: React.FunctionComponent = () => {
 
         fetch('http://localhost:3000/user', {mode: 'no-cors'})
         .then((response) => {
-            console.log(response);
+            console.log(response[0]);
         })
         .catch(() => {
             console.log('Une erreur s\'est produite');
