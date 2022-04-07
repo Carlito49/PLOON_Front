@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { RouteParams } from "../navigation/RootNavigator";
 import InputText from "../components/molecules/InputText";
 import HomeTemplate from '../components/templates/HomeTemplate';
-import Title from '../components/molecules/Title';
 import ValidationButton from "../components/molecules/ValidationButton";
 import Lien from "../components/molecules/Lien";
 
@@ -37,16 +36,26 @@ const Accueil: React.FunctionComponent = () => {
                 <View style={AccueilStyle.input}>
                     <View style={AccueilStyle.inputMargin}>
                         <View style={AccueilStyle.subTitle}>
-                            <Text>
-                                Nom d'utilisateur
+                            <Text style={AccueilStyle.text}>
+                                Nom d'utilisateur :
                             </Text>
                         </View>
-                        <View>
+                        <View style={AccueilStyle.inputText}>
                             <InputText placeholder="Entrez votre nom d'utilisateur" onChangeText={(text) => setText(text)} value={text} secureTextEntry={false}/>
                         </View>
-                    </View>
-                    <View style={AccueilStyle.inputMargin}>
-                        <InputText placeholder="Entrez votre mot de passe" onChangeText={(password) => setPassword(password)} value={password} secureTextEntry={true}/>
+                        <View style={AccueilStyle.subTitle}>
+                            <Text style={AccueilStyle.text}>
+                                Mot de passe :
+                            </Text>
+                        </View>
+                        <View style={AccueilStyle.inputPässword}>
+                            <InputText placeholder="Entrez votre mot de passe" onChangeText={(password) => setPassword(password)} value={password} secureTextEntry={true}/>
+                        </View>
+                        <View style={AccueilStyle.forgotPassword}>
+                            <Lien onPress={createAccount}>
+                                Mot de passe oublié ?
+                            </Lien>
+                        </View>
                     </View>
                 </View>
                 <View style={AccueilStyle.btn}>

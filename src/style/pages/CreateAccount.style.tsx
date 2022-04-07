@@ -4,26 +4,45 @@ const CreateAccountStyle = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: 'red'
     },
     title: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'blue'
     },
     input: {
-        flex: 2,
+        flex: 1.3,
         justifyContent: 'center',
-        backgroundColor: 'yellow'
     },
     inputMargin: {
-        marginVertical: 5
+        marginVertical: 10
     },
     validationStyle: {
-        flex: 0.5,
         marginBottom: 10,
-        backgroundColor: 'orange'
-    }
+        width: '55%',
+        alignItems: 'center'
+    },
+    lienStyle: {
+        marginTop: 8
+    },
+    inputText: {
+        marginBottom: 30
+    },
+    inputPässword: {
+        marginBottom: 10
+    },
+    subTitle: {
+        alignItems: 'flex-start',
+        marginLeft: 20,
+    },
+    text: {
+        fontSize: 20
+    },
+    btn: {
+        flex: 0.5,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        width: '100%',
+    },
 });
 
 export default CreateAccountStyle;

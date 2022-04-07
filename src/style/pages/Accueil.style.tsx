@@ -14,26 +14,37 @@ const AccueilStyle = StyleSheet.create({
         marginVertical: 5,
     },
     inputMargin: {
-        marginVertical: 5,
-        backgroundColor: 'red'
+        marginVertical: 10,
     },
     btn: {
         flex: 0.5,
         justifyContent: 'flex-start',
         alignItems: 'center',
-        width: '100%'
+        width: '100%',
     },
     validationBtnStyle: {
         marginBottom: 10,
-        width: '40%',
+        width: '55%',
         alignItems: 'center',
     },
     lienStyle: {
         marginTop: 8
     },
     subTitle: {
-        backgroundColor: 'yellow',
-        alignItems: 'center'
+        alignItems: 'flex-start',
+        marginLeft: 20,
+    },
+    text: {
+        fontSize: 20
+    },
+    inputText: {
+        marginBottom: 30
+    },
+    inputPässword: {
+        marginBottom: 10
+    },
+    forgotPassword: {
+        marginStart: 10
     }
 });
 
