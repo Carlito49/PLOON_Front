@@ -20,7 +20,7 @@ const FooterStyle = StyleSheet.create({
     btn: {
         flex: 1,
         alignItems: 'center',
-        borderRadius: 15,
+        borderRadius: 30,
         borderWidth: 2,
         borderColor: 'white',
         marginHorizontal: 3

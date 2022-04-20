@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import Header from "./Header";
-import Footer from "./Footer";
 import HomeTemplateStyle from "../../style/templates/HomeTemplate.style"
 
 type Props = {

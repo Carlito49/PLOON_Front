@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { RouteParams } from "../navigation/RootNavigator";
@@ -16,14 +16,7 @@ const Accueil: React.FunctionComponent = () => {
     const [password, setPassword] = useState<string>('');
 
     const onPress = () => {
-
-        fetch('http://localhost:3000/user', {mode: 'no-cors'})
-        .then((response) => {
-            console.log(response[0]);
-        })
-        .catch(() => {
-            console.log('Une erreur s\'est produite');
-        })
+        navigation.navigate('Event' as never);
     }
 
     const createAccount = () => {

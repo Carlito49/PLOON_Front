@@ -24,6 +24,12 @@ const Footer: React.FunctionComponent = () => {
             <TouchableOpacity onPress={onTouchable} style={[FooterStyle.btn, FooterStyle.bgRed]}>
                 <HomeButton />
             </TouchableOpacity>
+            <TouchableOpacity onPress={onTouchable} style={[FooterStyle.btn, FooterStyle.bgRed]}>
+                <HomeButton />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={onTouchable} style={[FooterStyle.btn, FooterStyle.bgRed]}>
+                <HomeButton />
+            </TouchableOpacity>
         </View>   
     );
 }
