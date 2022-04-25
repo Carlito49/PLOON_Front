@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import EventTemplateStyle from '../../style/templates/EventTemplate.style';
-import Footer from "./Footer";
+import Footer from '../organisms/Footer';
 
 type Props = {
     children: React.ReactNode;

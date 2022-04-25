@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import Header from "./Header";
+import Header from "../organisms/Header";
 import HomeTemplateStyle from "../../style/templates/HomeTemplate.style"
 
 type Props = {
