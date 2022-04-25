@@ -8,7 +8,7 @@ const AccueilStyle = StyleSheet.create({
         alignItems: 'center',
     },
     input: {
-        flex: 1,
+        flex: 6,
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 5,
@@ -17,14 +17,15 @@ const AccueilStyle = StyleSheet.create({
         marginVertical: 10,
     },
     btn: {
-        flex: 0.5,
+        flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
+        marginBottom: 30
     },
     validationBtnStyle: {
-        marginBottom: 10,
-        width: '55%',
+        width: '50%',
+        height: '50%',
         alignItems: 'center',
     },
     lienStyle: {
@@ -40,7 +41,7 @@ const AccueilStyle = StyleSheet.create({
     inputText: {
         marginBottom: 30
     },
-    inputPässword: {
+    inputPassword: {
         marginBottom: 10
     },
     forgotPassword: {

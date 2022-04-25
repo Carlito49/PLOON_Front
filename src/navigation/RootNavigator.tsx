@@ -1,13 +1,11 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Accueil from '../pages/Accueil';
-import Profile from '../pages/Profile';
 import CreateAccount from '../pages/CreateAccount';
 import Event from '../pages/Event';
 
 export type RouteParams = {
     Accueil: undefined;
-    Profile: undefined;
     CreateAccount: undefined;
     Event: undefined;
 }
@@ -25,13 +23,6 @@ export const RootNavigator: React.FunctionComponent = () => {
                     headerTitleAlign: 'center',  
                 }} 
                 
-                />
-                <Stack.Screen 
-                name="Profile" 
-                component={Profile}
-                options={{
-                    animation: 'slide_from_right'
-                }}
                 />
                 <Stack.Screen 
                 name="CreateAccount"

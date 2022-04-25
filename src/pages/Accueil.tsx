@@ -41,7 +41,7 @@ const Accueil: React.FunctionComponent = () => {
                                 Mot de passe :
                             </Text>
                         </View>
-                        <View style={AccueilStyle.inputPässword}>
+                        <View style={AccueilStyle.inputPassword}>
                             <InputText placeholder="Entrez votre mot de passe" onChangeText={(password) => setPassword(password)} value={password} secureTextEntry={true}/>
                         </View>
                         <View style={AccueilStyle.forgotPassword}>

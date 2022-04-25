@@ -5,11 +5,20 @@ const EventStyle = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'yellow'
     },
     body: {
         flex: 8,
-        backgroundColor:'red'
+    },
+    createEvent: {
+        flex: 1,
+    },
+    centreInterets: {
+        flex: 1,
+        backgroundColor: 'orange'
+    },
+    myEvent: {
+        flex: 2,
+        backgroundColor: 'red'
     }
 });
 
