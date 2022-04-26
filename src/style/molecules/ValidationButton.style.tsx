@@ -5,7 +5,7 @@ import Themes from "../Themes";
 const ValidationButtonStyle = StyleSheet.create({
     btn: {
         borderWidth: Themes.default.borderWidth,
-        padding: 6,
+        padding: 4,
         borderRadius: 40,
         height: '100%',
         width: '100%',

@@ -17,7 +17,7 @@ const CreateEventStyle = StyleSheet.create({
     text: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     textStyle: {
         color: 'white',
@@ -27,8 +27,8 @@ const CreateEventStyle = StyleSheet.create({
     btn: {
         flex: 0.5,
         width: '50%',
-        height: '30%',
-        backgroundColor: 'red'
+        marginLeft: 170,
+        marginBottom: 5
     }
 });
 
