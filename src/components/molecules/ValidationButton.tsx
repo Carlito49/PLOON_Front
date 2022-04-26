@@ -12,7 +12,7 @@ interface ValidationButtonProps
 const ValidationButton: React.FunctionComponent<ValidationButtonProps> = (props: ValidationButtonProps) => {
     return (
         <TouchableOpacity style={ValidationButtonStyle.btn}>
-            <Text onPress={props.onPress}>
+            <Text onPress={props.onPress} style={ValidationButtonStyle.text}>
                 {props.children}
             </Text>
         </TouchableOpacity>

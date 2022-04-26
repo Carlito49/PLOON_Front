@@ -8,7 +8,7 @@ const AccueilStyle = StyleSheet.create({
         alignItems: 'center',
     },
     input: {
-        flex: 6,
+        flex: 5,
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 5,
@@ -21,15 +21,16 @@ const AccueilStyle = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
-        marginBottom: 30
+        marginBottom: 30,
     },
     validationBtnStyle: {
-        width: '50%',
-        height: '50%',
+        flex: 1,
+        width: '80%',
         alignItems: 'center',
     },
     lienStyle: {
-        marginTop: 8
+        marginTop: 8,
+        flex: 0.5
     },
     subTitle: {
         alignItems: 'flex-start',

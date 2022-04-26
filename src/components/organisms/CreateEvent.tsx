@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ImageBackground, Text } from 'react-native';
 import CreateEventStyle from "../../style/organisms/CreateEvent.style";
-import ValidationButton from "../molecules/ValidationButton";
+import CreateEventBtn from "../molecules/CreateEventBtn";
 
 const CreateEvent: React.FunctionComponent = () => {
 
@@ -11,14 +11,16 @@ const CreateEvent: React.FunctionComponent = () => {
 
     return (
         <View style={CreateEventStyle.container}>
-            <ImageBackground source={require('../../../assets/images/songoku.jpg')} style={CreateEventStyle.img} imageStyle={CreateEventStyle.imgStyle}>
+            <ImageBackground source={require('../../../assets/images/rencontreResto.jpg')} style={CreateEventStyle.img} imageStyle={CreateEventStyle.imgStyle}>
                 <View style={CreateEventStyle.text}>
-                    <Text style={CreateEventStyle.textStyle}>HEHOOOOO</Text>
+                    <Text style={CreateEventStyle.textStyle}>
+                        Créer vous même votre propre événement Ploon
+                    </Text>
                 </View>
                 <View style={CreateEventStyle.btn}>
-                    <ValidationButton onPress={onPress}>
+                    <CreateEventBtn onPress={onPress}>
                         Créer votre événement
-                    </ValidationButton>
+                    </CreateEventBtn>
                 </View>
             </ImageBackground>
         </View>

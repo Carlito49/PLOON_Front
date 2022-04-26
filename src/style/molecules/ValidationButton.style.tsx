@@ -10,7 +10,13 @@ const ValidationButtonStyle = StyleSheet.create({
         height: '100%',
         width: '100%',
         alignItems: 'center',
-        backgroundColor: 'orange'
+        backgroundColor: 'orange',
+        justifyContent: 'center'
+    },
+    text: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: 'white'
     }
 });
 

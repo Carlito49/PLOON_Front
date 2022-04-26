@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput } from "react-native";
+import { TextInput, View } from "react-native";
 import InputSearchStyle from "../../style/molecules/InputSearch.style";
 
 interface InputTextProps
@@ -11,7 +11,10 @@ interface InputTextProps
 
 const InputText: React.FunctionComponent<InputTextProps> = (props) => {
     return(
-        <TextInput placeholder={props.placeholder} onChangeText={props.onChangeText} style={InputSearchStyle.container} value={props.value}/>
+        <View>
+            <TextInput placeholder={props.placeholder} onChangeText={props.onChangeText} style={InputSearchStyle.container} value={props.value}/>
+        </View>
+        
     );
 }
 

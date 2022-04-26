@@ -22,10 +22,12 @@ const CreateEventStyle = StyleSheet.create({
     textStyle: {
         color: 'white',
         fontWeight: 'bold',
-        fontSize: 15
+        fontSize: 15,
+        paddingHorizontal: 30,
+        textAlign: 'center'
     },
     btn: {
-        flex: 0.5,
+        flex: 0.4,
         width: '50%',
         marginLeft: 170,
         marginBottom: 5

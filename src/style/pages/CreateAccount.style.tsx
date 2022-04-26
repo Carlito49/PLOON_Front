@@ -6,20 +6,21 @@ const CreateAccountStyle = StyleSheet.create({
         alignItems: 'center',
     },
     input: {
-        flex: 6,
+        flex: 4,
         justifyContent: 'center',
     },
     inputMargin: {
         marginVertical: 10
     },
     validationStyle: {
-        marginBottom: 5,
-        width: '50%',
+        width: '80%',
         height: '50%',
-        alignItems: 'center',
+        flex: 1,
+        backgroundColor: 'blue'
     },
     lienStyle: {
-        marginTop: 8
+        marginTop: 8,
+        flex: 1
     },
     inputText: {
         marginBottom: 30
@@ -39,6 +40,7 @@ const CreateAccountStyle = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
+        backgroundColor: 'red'
     },
 });
 
