@@ -5,8 +5,12 @@ import SubTitle from "../components/molecules/SubTitle";
 import CreateEvent from "../components/organisms/CreateEvent";
 import EventTemplate from "../components/templates/EventTemplate";
 import EventStyle from "../style/pages/Event.style";
+import CentreInteretCard from '../components/molecules/CentreInteretCard';
+import MyEvent from '../components/organisms/MyEvent';
 
 const Event: React.FunctionComponent = () => {
+
+    const onPress = () => {}
 
     const [search, setSearch] = useState<string>('');
 
@@ -20,10 +24,30 @@ const Event: React.FunctionComponent = () => {
                     <CreateEvent />
                 </View>
                 <View style={EventStyle.centreInterets}>
-
+                    <View style={EventStyle.subTitle}>
+                        <SubTitle onPress={onPress}>
+                            Centres d'intérets
+                        </SubTitle>
+                    </View>
+                    <View style={EventStyle.listView}>
+                        <View style={EventStyle.card}>
+                            <CentreInteretCard>
+                                Cinéma
+                            </CentreInteretCard>
+                        </View>
+                    </View>
                 </View>
-                <View style={EventStyle.myEvent}>
-
+                <View style={EventStyle.myEventStyle}>
+                    <View style={EventStyle.subTitle}>
+                        <SubTitle onPress={onPress}>
+                            Evénement
+                        </SubTitle>
+                    </View>
+                    <View style={EventStyle.myEventCardStyle}>
+                        <MyEvent>
+                            
+                        </MyEvent>
+                    </View>
                 </View>
             </View>
         </EventTemplate>

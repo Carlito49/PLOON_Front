@@ -16,7 +16,6 @@ const CreateAccountStyle = StyleSheet.create({
         width: '80%',
         height: '50%',
         flex: 1,
-        backgroundColor: 'blue'
     },
     lienStyle: {
         marginTop: 8,
@@ -40,7 +39,6 @@ const CreateAccountStyle = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
-        backgroundColor: 'red'
     },
 });
 

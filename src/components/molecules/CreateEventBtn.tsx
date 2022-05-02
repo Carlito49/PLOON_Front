@@ -1,13 +1,13 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { TouchableOpacity, Text } from "react-native";
 import CreateEventBtnStyle from '../../style/molecules/CreateEventBtn.style';
 
 type Props = {
     children: React.ReactNode;
-    onPress: () => void;
+    onPress?: () => void;
 }
 
-const CreateEventBtn: React.FunctionComponent<Props> = (props: Props) => {
+const CreateEventBtn: FunctionComponent<Props> = (props: Props) => {
 
     return (
         <TouchableOpacity style={CreateEventBtnStyle.container}>

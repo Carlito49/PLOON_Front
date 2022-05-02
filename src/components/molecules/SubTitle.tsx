@@ -5,16 +5,24 @@ import SubTitleStyle from '../../style/molecules/SubTitle.style';
 
 type Props = {
     children: React.ReactNode;
+    onPress: () => void;
 }
 
 const SubTitle: React.FunctionComponent<Props> = (props: Props) => {
+
+    const onPress = () => {
+
+    }
+
     return (
         <View style={SubTitleStyle.container}>
-            <View>
+            <Text style={SubTitleStyle.text}>
                 {props.children}
-            </View>
+            </Text>
             <TouchableOpacity>
-                Voir plus
+                <Text onPress={props.onPress} style={SubTitleStyle.lien}>
+                    Voir plus
+                </Text>
             </TouchableOpacity>
         </View>
     )

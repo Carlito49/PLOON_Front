@@ -11,7 +11,8 @@ const ValidationButtonStyle = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         backgroundColor: 'orange',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderColor: 'orange'
     },
     text: {
         fontWeight: 'bold',

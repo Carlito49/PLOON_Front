@@ -14,11 +14,30 @@ const EventStyle = StyleSheet.create({
     },
     centreInterets: {
         flex: 1,
-        backgroundColor: 'orange'
     },
     myEvent: {
         flex: 2,
         backgroundColor: 'red'
+    },
+    subTitle: {
+        flex: 1,
+        justifyContent: 'center'
+    },
+    listView: {
+        flex: 3,
+        flexDirection: 'row'
+    },
+    card: {
+        flex: 0.3,
+        margin: 10,
+    },
+    myEventStyle: {
+        flex: 2.5,
+        backgroundColor: 'red'
+    },
+    myEventCardStyle: {
+        flex: 3,
+        margin: 20
     }
 });
 
