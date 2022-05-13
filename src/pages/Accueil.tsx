@@ -27,7 +27,7 @@ const Accueil: React.FunctionComponent = () => {
     return (
         <HomeTemplate>
             <View style={AccueilStyle.container}>
-                <View style={AccueilStyle.input}></View>
+                <View style={AccueilStyle.input}>
                     <View style={AccueilStyle.inputMargin}>
                         <View style={AccueilStyle.subTitle}>
                             <Text style={AccueilStyle.text}>
