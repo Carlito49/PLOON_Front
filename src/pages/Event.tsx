@@ -7,6 +7,7 @@ import EventTemplate from "../components/templates/EventTemplate";
 import EventStyle from "../style/pages/Event.style";
 import CentreInteretCard from '../components/molecules/CentreInteretCard';
 import MyEvent from '../components/organisms/MyEvent';
+import IconComponent from "../components/atoms/IconComponent";
 
 const Event: React.FunctionComponent = () => {
 
@@ -17,7 +18,7 @@ const Event: React.FunctionComponent = () => {
     return (
         <EventTemplate>
             <View style={EventStyle.input}>
-                <InputSearch onChangeText={(search) => setSearch(search)} value={search}/>
+                <InputSearch onChangeText={(search) => setSearch(search)} value={search} />
             </View>
             <View style={EventStyle.body}>
                 <View style={EventStyle.createEvent}>

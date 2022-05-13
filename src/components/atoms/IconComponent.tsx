@@ -24,8 +24,8 @@ const IconComponent: FunctionComponent<Props> = (props: Props) => {
     function getIcon() {
         switch(props.name)
         {
-            case "Home": return <Home width={ getWidth() } height={ getHeight() }/>; break;
-            default: return <View/>; 
+            case "Home": return <Home width={ getWidth() } height={ getHeight() }/>;
+            default: return <View />; 
         }
     }
 

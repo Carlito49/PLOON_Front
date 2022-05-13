@@ -16,19 +16,18 @@ const Accueil: React.FunctionComponent = () => {
     const [text, setText] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
-    const onPress = () => {
+    const toEvent = () => {
         navigation.navigate('Event' as never);
     }
 
-    const createAccount = () => {
+    const toCreateAccount = () => {
         navigation.navigate('CreateAccount' as never);
     }
 
     return (
         <HomeTemplate>
-            <IconComponent name="Home"/>
             <View style={AccueilStyle.container}>
-                <View style={AccueilStyle.input}>
+                <View style={AccueilStyle.input}></View>
                     <View style={AccueilStyle.inputMargin}>
                         <View style={AccueilStyle.subTitle}>
                             <Text style={AccueilStyle.text}>
@@ -47,7 +46,7 @@ const Accueil: React.FunctionComponent = () => {
                             <InputText placeholder="Entrez votre mot de passe" onChangeText={(password) => setPassword(password)} value={password} secureTextEntry={true}/>
                         </View>
                         <View style={AccueilStyle.forgotPassword}>
-                            <Lien onPress={createAccount}>
+                            <Lien onPress={toCreateAccount}>
                                 Mot de passe oublié ?
                             </Lien>
                         </View>
@@ -55,12 +54,12 @@ const Accueil: React.FunctionComponent = () => {
                 </View>
                 <View style={AccueilStyle.btn}>
                     <View style={AccueilStyle.validationBtnStyle}>
-                        <ValidationButton onPress={onPress}>
+                        <ValidationButton onPress={toEvent}>
                             Se Connecter
                         </ValidationButton>
                     </View>
                     <View style={AccueilStyle.lienStyle}>
-                        <Lien onPress={createAccount}>
+                        <Lien onPress={toCreateAccount}>
                             Pas encore de compte? Créez-en un !
                         </Lien>
                     </View>
