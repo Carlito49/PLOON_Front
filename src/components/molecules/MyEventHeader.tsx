@@ -10,8 +10,9 @@ const MyEventHeader: React.FunctionComponent = () => {
             <View style={MyEventHeaderStyle.ajoutBtnStyle}>
                 <AjoutBtn />     
             </View>
+            <View style={MyEventHeaderStyle.body}></View>
             <View style={MyEventHeaderStyle.dateStyle}>
-                <CreateEventBtn>
+                <CreateEventBtn backgroundColor="orange">
                     Date
                 </CreateEventBtn>
             </View>

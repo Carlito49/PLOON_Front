@@ -7,8 +7,6 @@ const CreateEventBtnStyle = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 20,
-        borderColor: 'orange',
-        backgroundColor: 'orange'
     },
     text: {
         fontWeight: 'bold',

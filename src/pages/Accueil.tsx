@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -7,7 +7,6 @@ import InputText from "../components/molecules/InputText";
 import HomeTemplate from '../components/templates/HomeTemplate';
 import ValidationButton from "../components/molecules/ValidationButton";
 import Lien from "../components/molecules/Lien";
-import IconComponent from "../components/atoms/IconComponent";
 
 const Accueil: React.FunctionComponent = () => {
     const route = useRoute<RouteProp<RouteParams>>();
@@ -23,6 +22,22 @@ const Accueil: React.FunctionComponent = () => {
     const toCreateAccount = () => {
         navigation.navigate('CreateAccount' as never);
     }
+
+    useEffect(() => {
+
+        console.log(process.env.REACT_APP_API_URL)
+
+        fetch(`${process.env.REACT_APP_API_URL}/user/find`, {
+            method: 'GET',
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            },
+        })
+        .then(() => console.log('Réussi!'))
+        .catch((error) => console.log(error))
+
+    }, [])
 
     return (
         <HomeTemplate>
