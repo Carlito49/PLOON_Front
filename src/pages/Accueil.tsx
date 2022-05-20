@@ -25,6 +25,17 @@ const Accueil: React.FunctionComponent = () => {
 
     useEffect(() => {
 
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
+
         console.log(process.env.REACT_APP_API_URL)
 
         fetch(`${process.env.REACT_APP_API_URL}/user/find`, {
