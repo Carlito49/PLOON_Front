@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -22,6 +22,33 @@ const Accueil: React.FunctionComponent = () => {
     const toCreateAccount = () => {
         navigation.navigate('CreateAccount' as never);
     }
+
+    useEffect(() => {
+
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
+
+        console.log(process.env.REACT_APP_API_URL)
+
+        fetch(`${process.env.REACT_APP_API_URL}/user/find`, {
+            method: 'GET',
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            },
+        })
+        .then(() => console.log('Réussi!'))
+        .catch((error) => console.log(error))
+
+    }, [])
 
     return (
         <HomeTemplate>

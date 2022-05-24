@@ -1,9 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const MyEventHeaderStyle = StyleSheet.create({
-    container: {
-        flex: 1
-    },
     header: {
         flex: 1
     },
@@ -12,12 +9,16 @@ const MyEventHeaderStyle = StyleSheet.create({
     },
     ajoutBtnStyle: {
         flex: 1,
+        alignItems: 'flex-end',
+        margin: 10,
     },
     dateStyle: {
         flex: 1,
         width: '20%',
         margin: 5,
-        marginTop: 50,
+    },
+    body: {
+        flex: 1.5
     }
 });
 

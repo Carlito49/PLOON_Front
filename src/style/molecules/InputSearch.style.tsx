@@ -10,7 +10,19 @@ const InputSearchStyle = StyleSheet.create({
         height: screenHeight,
         borderColor: 'orange',
         borderRadius: 30,
-        paddingHorizontal: 25,
+        flexDirection: 'row'
+    },
+    icon: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: 8
+    },
+    input: {
+        flex: 8,
+        borderRadius: 30,
+        justifyContent: 'center',
+        paddingLeft: 10
     }
 });
 

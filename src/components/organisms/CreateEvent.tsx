@@ -18,7 +18,7 @@ const CreateEvent: React.FunctionComponent = () => {
                     </Text>
                 </View>
                 <View style={CreateEventStyle.btn}>
-                    <CreateEventBtn onPress={onPress}>
+                    <CreateEventBtn onPress={onPress} backgroundColor="orange">
                         Créer votre événement
                     </CreateEventBtn>
                 </View>

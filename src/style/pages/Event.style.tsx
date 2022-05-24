@@ -17,11 +17,10 @@ const EventStyle = StyleSheet.create({
     },
     myEvent: {
         flex: 2,
-        backgroundColor: 'red'
     },
     subTitle: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     listView: {
         flex: 3,
@@ -33,11 +32,10 @@ const EventStyle = StyleSheet.create({
     },
     myEventStyle: {
         flex: 2.5,
-        backgroundColor: 'red'
     },
     myEventCardStyle: {
         flex: 3,
-        margin: 20
+        margin: 10
     }
 });
 

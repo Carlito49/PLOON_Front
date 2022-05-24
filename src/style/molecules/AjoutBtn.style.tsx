@@ -3,15 +3,14 @@ import { StyleSheet } from "react-native";
 const AjoutBtnStyle = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'flex-end',
-        justifyContent: 'flex-start',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '10%',
+        height: '100%',
+        backgroundColor: 'orange',
+        flexDirection: 'row',
+        borderRadius: 8,
     },
-    text: {
-        margin: 8,
-        borderWidth: 1,
-        borderColor: 'transparent',
-        backgroundColor: 'orange'
-    }
 });
 
 export default AjoutBtnStyle;

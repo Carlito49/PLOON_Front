@@ -1,3 +1,7 @@
-type IconList = "Home";
+enum IconList  {
+    "Home",
+    "Plus",
+    "Search"
+}
 
 export default IconList;
