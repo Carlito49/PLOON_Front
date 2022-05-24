@@ -4,6 +4,7 @@ import { RootNavigator } from './src/navigation/RootNavigator'
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { AppearanceProvider } from "react-native-appearance";
+import TabNavigator from './src/navigation/TabNavigator';
 
 export default function App() {
 
@@ -11,8 +12,8 @@ export default function App() {
     <AppearanceProvider>
       <SafeAreaView style={styles.container}>
         <NavigationContainer>
-          <RootNavigator />
           <StatusBar style="auto" />
+          <RootNavigator />
         </NavigationContainer>
       </SafeAreaView>
     </AppearanceProvider>

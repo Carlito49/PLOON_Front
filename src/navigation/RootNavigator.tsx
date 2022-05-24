@@ -22,7 +22,6 @@ export const RootNavigator: React.FunctionComponent = () => {
                 options={{
                     headerTitleAlign: 'center',  
                 }} 
-                
                 />
                 <Stack.Screen 
                 name="CreateAccount"

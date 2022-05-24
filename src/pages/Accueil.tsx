@@ -7,7 +7,6 @@ import InputText from "../components/molecules/InputText";
 import HomeTemplate from '../components/templates/HomeTemplate';
 import ValidationButton from "../components/molecules/ValidationButton";
 import Lien from "../components/molecules/Lien";
-import IconComponent from "../components/atoms/IconComponent";
 
 const Accueil: React.FunctionComponent = () => {
     const route = useRoute<RouteProp<RouteParams>>();
