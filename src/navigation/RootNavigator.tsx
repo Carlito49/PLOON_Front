@@ -1,38 +1,31 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import Accueil from '../pages/Accueil';
-import CreateAccount from '../pages/CreateAccount';
-import Event from '../pages/Event';
+import AccueilNavigator from './AccueilNavigator';
+import BottomNavigator from './BottomNavigator';
 
 export type RouteParams = {
+    AccueilNavigator: undefined;
+    BottomNavigator: undefined;
     Accueil: undefined;
-    CreateAccount: undefined;
-    Event: undefined;
 }
 
-const Stack = createNativeStackNavigator<RouteParams>();
-
 export const RootNavigator: React.FunctionComponent = () => {
+
+    const Stack = createNativeStackNavigator<RouteParams>();
+    
     return(
         <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Group>
                 <Stack.Screen 
-                name="Accueil" 
-                component={Accueil}
+                name="AccueilNavigator" 
+                component={AccueilNavigator}
                 options={{
                     headerTitleAlign: 'center',  
                 }} 
                 />
                 <Stack.Screen 
-                name="CreateAccount"
-                component={CreateAccount}
-                options={{
-                    animation: 'slide_from_right'
-                }}
-                />
-                <Stack.Screen 
-                name='Event'
-                component={Event}
+                name='BottomNavigator'
+                component={BottomNavigator}
                 options={{
                     animation: 'slide_from_right'
                 }}

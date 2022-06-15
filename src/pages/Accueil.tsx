@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { View, Text } from 'react-native';
 import AccueilStyle from '../style/pages/Accueil.style';
-import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
-import { RouteParams } from "../navigation/RootNavigator";
+import { useNavigation } from "@react-navigation/native";
 import InputText from "../components/molecules/InputText";
 import HomeTemplate from '../components/templates/HomeTemplate';
 import ValidationButton from "../components/molecules/ValidationButton";
 import Lien from "../components/molecules/Lien";
 
 const Accueil: React.FunctionComponent = () => {
-    const route = useRoute<RouteProp<RouteParams>>();
+
     const navigation = useNavigation();
 
     const [text, setText] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
     const toEvent = () => {
-        navigation.navigate('Event' as never);
+        navigation.navigate('BottomNavigator' as never);
     }
 
     const toCreateAccount = () => {
@@ -25,28 +24,11 @@ const Accueil: React.FunctionComponent = () => {
 
     useEffect(() => {
 
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // FAIRE LA TAB NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!
-        
+        console.log(process.env.REACT_APP_API_LOCALHOST)
 
-        console.log(process.env.REACT_APP_API_URL)
-
-        fetch(`${process.env.REACT_APP_API_URL}/user/find`, {
-            method: 'GET',
-            headers: { 
-                "Content-Type": "application/json",
-                "Accept": "application/json" 
-            },
-        })
+        fetch(`http://192.168.1.161:3000/user/find`)
         .then(() => console.log('Réussi!'))
-        .catch((error) => console.log(error))
+        .catch((error) => console.log("Erreur!"))
 
     }, [])
 

@@ -4,7 +4,8 @@ import { RootNavigator } from './src/navigation/RootNavigator'
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { AppearanceProvider } from "react-native-appearance";
-import TabNavigator from './src/navigation/TabNavigator';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 
 export default function App() {
 

@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 
 const EventStyle = StyleSheet.create({
     input: {
-        flex: 1,
+        flex: 0.5,
         justifyContent: 'center',
         alignItems: 'center',
     },
     body: {
-        flex: 8,
+        flex: 1,
     },
     createEvent: {
-        flex: 1,
+        flex: 0.8,
     },
     centreInterets: {
         flex: 1,
@@ -28,14 +28,19 @@ const EventStyle = StyleSheet.create({
     },
     card: {
         flex: 0.3,
-        margin: 10,
+        marginTop: 10,
+        marginHorizontal: 10
     },
     myEventStyle: {
-        flex: 2.5,
+        flex: 2,
     },
     myEventCardStyle: {
-        flex: 3,
-        margin: 10
+        flex: 4,
+        marginHorizontal: 12,
+        marginBottom: 12
+    },
+    subTitleEvent: {
+        flex: 0.8,
     }
 });
 

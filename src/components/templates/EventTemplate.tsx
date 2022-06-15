@@ -10,15 +10,7 @@ type Props = {
 const EventTemplate: React.FunctionComponent<Props> = (props: Props) => {
     return(
         <View style={EventTemplateStyle.container}>
-            <View style={EventTemplateStyle.header}>
-
-            </View>
-            <View style={EventTemplateStyle.body}>
                 {props.children}
-            </View>
-            <View style={EventTemplateStyle.footer}>
-                <Footer />
-            </View>
         </View>
     )
 };

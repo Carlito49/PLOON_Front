@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const CreateEventStyle = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 20,
+        margin: 10,
         borderRadius: 10
     },
     img: {

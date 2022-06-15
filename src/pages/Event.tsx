@@ -17,17 +17,17 @@ const Event: React.FunctionComponent = () => {
 
     return (
         <EventTemplate>
-            <View style={EventStyle.input}>
-                <InputSearch onChangeText={(search) => setSearch(search)} value={search} icon={IconList.Search} placeholder="Rechercher un événement"/>
-            </View>
             <View style={EventStyle.body}>
+                <View style={EventStyle.input}>
+                    <InputSearch onChangeText={(search) => setSearch(search)} value={search} icon={IconList.Search} placeholder="Rechercher un événement"/>
+                </View>
                 <View style={EventStyle.createEvent}>
                     <CreateEvent />
                 </View>
                 <View style={EventStyle.centreInterets}>
                     <View style={EventStyle.subTitle}>
                         <SubTitle onPress={onPress}>
-                            Centres d'intérets
+                            Centres d'intéret
                         </SubTitle>
                     </View>
                     <View style={EventStyle.listView}>
@@ -39,7 +39,7 @@ const Event: React.FunctionComponent = () => {
                     </View>
                 </View>
                 <View style={EventStyle.myEventStyle}>
-                    <View style={EventStyle.subTitle}>
+                    <View style={EventStyle.subTitleEvent}>
                         <SubTitle onPress={onPress}>
                             Evénement
                         </SubTitle>
