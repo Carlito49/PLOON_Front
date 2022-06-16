@@ -12,7 +12,7 @@ const BottomNavigator: React.FunctionComponent = () => {
     return (
         <App.Navigator
             screenOptions={({ route }) => ({
-                tabBarIcon: ({ focused, color, size }) => {
+                tabBarIcon: ({ color, size }) => {
                     let iconName: any; 
                     switch (route.name) {
                         case 'Event': 
@@ -26,7 +26,7 @@ const BottomNavigator: React.FunctionComponent = () => {
                             break;
                     }
                     return iconName ?
-                    <Ionicons name={iconName} size={size} color={color}/>
+                    <Ionicons name={iconName} size={size} color={color} />
                     : null
                 }
             })}
@@ -58,7 +58,6 @@ const BottomNavigator: React.FunctionComponent = () => {
                     title: 'Mon Compte'
                 }}
             />
-
         </App.Navigator>
     )
 };
