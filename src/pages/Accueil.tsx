@@ -11,24 +11,38 @@ const Accueil: React.FunctionComponent = () => {
 
     const navigation = useNavigation();
 
+    let userNames: string[];
     const [text, setText] = useState<string>('');
     const [password, setPassword] = useState<string>('');
+    const [users, setUsers] = useState<string[]>([]);
 
     const toEvent = () => {
-        navigation.navigate('BottomNavigator' as never);
+        userNames = [];
+        users.map(value => userNames.push(value["nomUtilisateur"]))
+        if (userNames.includes(text) && password == "coucou")
+        {
+            navigation.navigate('BottomNavigator' as never);
+        }
+        else 
+        {
+            console.log("Erreur!!")
+        }
     }
 
     const toCreateAccount = () => {
         navigation.navigate('CreateAccount' as never);
     }
 
+    const getUtilisateur = (url: string) => {
+        fetch(url)
+        .then(response => response.json())
+        .then(data => setUsers(data))
+        .then(() => console.log(users.map((value) => value['nomUtilisateur'])))
+    }
+
     useEffect(() => {
 
-        console.log(process.env.REACT_APP_API_LOCALHOST)
-
-        fetch(`http://192.168.1.161:3000/user/find`)
-        .then(() => console.log('Réussi!'))
-        .catch((error) => console.log("Erreur!"))
+        getUtilisateur(`http://192.168.0.15:3000/user/find`)
 
     }, [])
 

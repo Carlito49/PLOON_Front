@@ -18,7 +18,7 @@
     "babel-plugin-inline-dotenv": "^1.7.0",
     "dotenv": "^16.0.1",
     "expo": "~44.0.2",
-    "expo-cli": "^5.4.6",
+    "expo-cli": "^5.4.11",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
