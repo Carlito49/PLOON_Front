@@ -44,7 +44,8 @@ const Accueil: React.FunctionComponent = () => {
     useEffect(() => {
 
         //getUtilisateur(`http://192.168.0.15:3000/user/find`)
-        getUtilisateur(`http://192.168.0.15:3000/user/find/3`)
+        //getUtilisateur(`http://192.168.0.15:3000/user/find/3`)
+        getUtilisateur(`http://192.168.0.15:3000/user/findName/QUELLIN`)
 
     }, [])
 
