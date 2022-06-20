@@ -37,12 +37,14 @@ const Accueil: React.FunctionComponent = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => setUsers(data))
-        .then(() => console.log(users.map((value) => value['nomUtilisateur'])))
+        .then(() => console.log(users))
+        .catch(() => console.log("L'utilisateur n'existe pas!"))
     }
 
     useEffect(() => {
 
-        getUtilisateur(`http://192.168.0.15:3000/user/find`)
+        //getUtilisateur(`http://192.168.0.15:3000/user/find`)
+        getUtilisateur(`http://192.168.0.15:3000/user/find/3`)
 
     }, [])
 
