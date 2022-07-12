@@ -12,32 +12,48 @@ const MyAccountStyle = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'red'
     },
-    profil: {
+    btn: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'yellow'
     },
     body: {
         flex: 4
     },
     informations: {
-        flex: 6
+        flex: 1
+    },
+    user: {
+        flex: 1,
+        backgroundColor: 'red'
     },
     userName: {
         flex: 1,
+        flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        paddingHorizontal: 10,
+    },
+    description: {
+        flex: 1,
+        paddingHorizontal: 10,
         backgroundColor: 'blue'
     },
-    btns: {
+    centreInterets: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'flex-end',
-        paddingEnd: 15,
-        backgroundColor: 'green'
+        paddingHorizontal: 10
+    },
+    event: {
+        flex: 1,
+        paddingHorizontal: 10
+    },
+    friends: {
+        flex: 1,
+        paddingHorizontal: 10
+    },
+    subTitle: {
+        fontSize: 22,
+        fontWeight: 'bold'
     }
 });
 

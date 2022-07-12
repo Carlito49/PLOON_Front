@@ -3,7 +3,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Event from "../pages/Event";
 import { Ionicons } from '@expo/vector-icons';
 import AccountNavigator from "./AccountNavigator";
-import SearchEvent from "../pages/SearchEvent";
+import Messages from "../pages/Messages";
+import Calendrier from "../pages/Calendrier";
+import Notifications from "../pages/Notifications";
 
 const BottomNavigator: React.FunctionComponent = () => {
 
@@ -16,13 +18,19 @@ const BottomNavigator: React.FunctionComponent = () => {
                     let iconName: any; 
                     switch (route.name) {
                         case 'Event': 
-                            iconName = 'cafe'
+                            iconName = 'home'
                             break;
-                        case 'SearchEvent':
-                            iconName = 'search'
+                        case 'Notifications': 
+                            iconName = 'notifications'
+                            break;
+                        case 'Calendrier': 
+                            iconName = 'md-calendar'
+                            break;
+                        case 'Messages': 
+                            iconName = 'mail'
                             break;
                         case 'AccountNavigator': 
-                            iconName = 'home'
+                            iconName = 'person'
                             break;
                     }
                     return iconName ?
@@ -36,17 +44,38 @@ const BottomNavigator: React.FunctionComponent = () => {
                 component={Event}
                 options={{
                     headerTitleAlign: 'center',
-                    title: 'Evénement'
+                    title: 'Evénements',
+                    tabBarShowLabel: false,
                 }}
             />
 
             <App.Screen 
-                name="SearchEvent"
-                component={SearchEvent}
+                name="Calendrier"
+                component={Calendrier}
                 options={{
-                    title: "Rechercher",
+                    tabBarShowLabel: false,
                     headerTitleAlign: 'center',
-                    headerTitle: 'Rechercher un événement'
+                    headerTitle: 'Calendrier'
+                }} 
+            />
+
+            <App.Screen 
+                name="Notifications"
+                component={Notifications}
+                options={{
+                    headerTitleAlign: 'center',
+                    headerTitle: 'Notifications',
+                    tabBarShowLabel: false,
+                }}
+            />
+
+            <App.Screen 
+                name="Messages"
+                component={Messages}
+                options={{
+                    headerTitleAlign: 'center',
+                    headerTitle: 'Mes Messages',
+                    tabBarShowLabel: false,
                 }}
             />
 
@@ -55,7 +84,8 @@ const BottomNavigator: React.FunctionComponent = () => {
                 component={AccountNavigator}
                 options={{
                     headerTitleAlign: 'center',
-                    title: 'Mon Compte'
+                    headerTitle: 'Profil',
+                    tabBarShowLabel: false,
                 }}
             />
         </App.Navigator>

@@ -17,16 +17,17 @@ const Accueil: React.FunctionComponent = () => {
     const [users, setUsers] = useState<string[]>([]);
 
     const toEvent = () => {
-        userNames = [];
-        users.map(value => userNames.push(value["nomUtilisateur"]))
-        if (userNames.includes(text) && password == "coucou")
-        {
-            navigation.navigate('BottomNavigator' as never);
-        }
-        else 
-        {
-            console.log("Erreur!!")
-        }
+        // userNames = [];
+        // users.map(value => userNames.push(value["nomUtilisateur"]))
+        // if (userNames.includes(text) && password == "coucou")
+        // {
+        //     navigation.navigate('BottomNavigator' as never);
+        // }
+        // else 
+        // {
+        //     console.log("Erreur!!")
+        // }
+        navigation.navigate('BottomNavigator' as never);
     }
 
     const toCreateAccount = () => {
